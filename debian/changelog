@@ -1,5 +1,5 @@
 php5-pdouser (0.3.0-1) unstable; urgency=low
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Initial release
 
  -- Gasol Wu <gasol.wu@gmail.com>  Wed, 25 May 2011 07:32:41 +0000
