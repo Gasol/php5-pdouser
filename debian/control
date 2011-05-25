@@ -1,0 +1,23 @@
+Source: php5-pdouser
+Priority: extra
+Maintainer: Gasol Wu <gasol.wu@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), php5 (>= 5.0.3), autoconf2.13
+Standards-Version: 3.9.1
+Section: php
+Homepage: http://pecl.php.net/package-info.php?package=pdo_user
+Vcs-Svn: http://svn.php.net/repository/pecl/pdo_user/
+Vcs-Browser: http://svn.php.net/viewvc/pecl/pdo_user/
+
+Package: php5-pdouser-dev
+Section: devel
+Architecture: i386 amd64
+Depends: php5-pdouser (= ${binary:Version})
+Description: Userspace driver for PDO
+ This extension provides a Userspace interface for PDO drivers
+
+Package: php5-pdouser
+Section: php
+Architecture: i386 amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Userspace driver for PDO
+ This extension provides a Userspace interface for PDO drivers
