@@ -8,13 +8,6 @@ Homepage: http://pecl.php.net/package-info.php?package=pdo_user
 Vcs-Svn: http://svn.php.net/repository/pecl/pdo_user/
 Vcs-Browser: http://svn.php.net/viewvc/pecl/pdo_user/
 
-Package: php5-pdouser-dev
-Section: devel
-Architecture: i386 amd64
-Depends: php5-pdouser (= ${binary:Version})
-Description: Userspace driver for PDO
- This extension provides a Userspace interface for PDO drivers
-
 Package: php5-pdouser
 Section: php
 Architecture: i386 amd64
