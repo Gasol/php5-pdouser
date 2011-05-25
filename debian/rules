@@ -22,4 +22,4 @@ override_dh_auto_test:
 	# skip
 
 override_dh_auto_install:
-	make install INSTALL_ROOT=$(CURDIR)/debian/tmp
+	make install INSTALL_ROOT=$(CURDIR)/debian/php5-pdouser
