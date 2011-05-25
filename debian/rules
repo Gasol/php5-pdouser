@@ -17,6 +17,7 @@ override_dh_auto_configure:
 	dh_testdir
 	$(PHPIZE)
 	./configure
+	echo "php:Depends=phpapi-$(php-config5 --phpapi)" > debian/substvars
 
 override_dh_auto_test:
 	# skip

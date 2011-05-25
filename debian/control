@@ -11,6 +11,6 @@ Vcs-Browser: http://svn.php.net/viewvc/pecl/pdo_user/
 Package: php5-pdouser
 Section: php
 Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${php:Depends}, ${shlibs:Depends}, ${misc:Depends}
 Description: Userspace driver for PDO
  This extension provides a Userspace interface for PDO drivers
