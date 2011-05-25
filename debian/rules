@@ -9,6 +9,10 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 PHPIZE = phpize
+PHPAPI = phpapi-$(shell php-config5 --phpapi)
+
+test:
+	echo $(PHPAPI)
 
 %:
 	dh $@
@@ -23,3 +27,6 @@ override_dh_auto_test:
 
 override_dh_auto_install:
 	make install INSTALL_ROOT=$(CURDIR)/debian/php5-pdouser
+
+override_dh_gencontrol:
+	dh_gencontrol -- -Vphp:Depends=$(PHPAPI)
