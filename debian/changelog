@@ -1,3 +1,9 @@
+php5-pdouser (0.3.0-1ubuntu1) natty; urgency=low
+
+  * change distribution
+
+ -- Gasol Wu <gasol.wu@gmail.com>  Wed, 25 May 2011 10:38:14 +0000
+
 php5-pdouser (0.3.0-1) unstable; urgency=low
 
   * Initial release
