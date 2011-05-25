@@ -8,6 +8,12 @@
 
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
+PHPIZE = phpize
 
 %:
-	dh $@ 
+	dh $@
+
+override_dh_auto_configure:
+	dh_testdir
+	$(PHPIZE)
+	./configure
